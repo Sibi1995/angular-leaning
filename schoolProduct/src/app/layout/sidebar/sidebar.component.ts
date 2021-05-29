@@ -8,7 +8,14 @@ import { MatSidenav } from '@angular/material/sidenav';
 })
 export class SidebarComponent implements OnInit {
 
-  @ViewChild('sidenav') sideNav:MatSidenav; // used to get the ref var of current component
+  menus = [
+    { name: 'Schools', path: 'schools' },
+    { name: 'Departments', path: 'departments' },
+    { name: 'Class', path: 'classes' }
+  ]
+
+  @ViewChild('sidenav') sideNav: MatSidenav; // used to get the ref var of current component
+
   @Input() set sidebarCollaps(value: boolean) {
     this.sideNav.toggle(value);
   }
@@ -18,5 +25,5 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
- 
+
 }

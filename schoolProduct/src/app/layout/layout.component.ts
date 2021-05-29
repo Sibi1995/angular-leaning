@@ -11,9 +11,9 @@ export class LayoutComponent implements OnInit {
 
   ngOnInit(): void {
   }
- 
-  sideClps=false;
-  callCollapsSidebar(){
-      this.sideClps =! this.sideClps;
+
+  sideClps = true;
+  callCollapsSidebar() {
+    this.sideClps = !this.sideClps;
   }
 }
