@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button>
+        <mat-icon (click)="sideCollaps()">menu</mat-icon>
+        
+      </button>
+      <h1>NPB</h1>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button [routerLink]="'/test'"> Schools </a>
+        <a mat-button [routerLink]="'/create-account'"> Departments </a>
+        <a mat-button [routerLink]="'/contacts'"> Class </a>
+  
+      </div>
+    </mat-toolbar-row>
+
+  </mat-toolbar>
