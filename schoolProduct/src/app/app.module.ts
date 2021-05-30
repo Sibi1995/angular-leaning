@@ -40,7 +40,7 @@ import { ContentpageComponent } from './layout/contentpage/contentpage.component
     MatButtonModule,
     MatIconModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    RouterModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
